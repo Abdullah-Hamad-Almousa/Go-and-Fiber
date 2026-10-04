@@ -4,10 +4,7 @@ This repo is not useful. It is a scratch pad of Go snippets with no app, no libr
 
 ## day4
 
-Interface (Speaker) Any type that has a Speak() string method automatically satisfies
-
-<strong>Why it's useful</strong>
-Decouples code. Functions can accept Speaker instead of a concrete Human, allowing to swap in other types without rewriting logic.
+require more work on the test
 
 ## placeholder branches
 
@@ -19,3 +16,4 @@ Fourteen branches that do not exist yet. Each line is a name and what that branc
 | `day2` | for loop and range. make(), append(), delete(). |
 | `day3` | Structs & Methods type and pointer |
 | `day4` | type Speaker interface, s.(type) for Interfaces & Polymorphism |
+| `day5` | Error Handling & Tests |
