@@ -1,12 +1,11 @@
-# day2
+# day3
 
 This repo is not useful. It is a scratch pad of Go snippets with no app, no library, and no problem to solve. `master` is whatever `main.go` happens to do right now. The other branches are placeholders: names and notes only. They are not created yet.
 
-## day2
+## day3
 
-make is useful with map is not setup with values from the start.
-make([]int, 5) in this example we used make to fill 0s for 5 times
-
+(p *Player) is the received method
+TakeDamage(amount int) is the function and the input value
 
 ## placeholder branches
 
