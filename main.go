@@ -91,13 +91,4 @@ func main() {
 		fmt.Println(s.Speak())
 	}
 
-	// Interface Slice Collection
-	for x := range 37 {
-		fmt.Print("-")
-		if x == 36 {
-			fmt.Println()
-		}
-		x++
-	}
-
 }

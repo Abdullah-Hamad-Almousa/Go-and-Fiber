@@ -1,11 +1,13 @@
-# day3
+# day4
 
 This repo is not useful. It is a scratch pad of Go snippets with no app, no library, and no problem to solve. `master` is whatever `main.go` happens to do right now. The other branches are placeholders: names and notes only. They are not created yet.
 
-## day3
+## day4
 
-(p *Player) is the received method
-TakeDamage(amount int) is the function and the input value
+Interface (Speaker) Any type that has a Speak() string method automatically satisfies
+
+<strong>Why it's useful</strong>
+Decouples code. Functions can accept Speaker instead of a concrete Human, allowing to swap in other types without rewriting logic.
 
 ## placeholder branches
 
