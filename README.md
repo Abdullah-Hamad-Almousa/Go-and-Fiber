@@ -16,3 +16,4 @@ Fourteen branches that do not exist yet. Each line is a name and what that branc
 | --- | --- |
 | `master` | Go Setup & Syntax *T and &T. |
 | `day2` | for loop and range. make(), append(), delete(). |
+| `day3` | Structs & Methods type and pointer |
