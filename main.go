@@ -34,6 +34,10 @@ func ValidateAge(age int) error {
 	return nil
 }
 
+func Add(a, b int) int {
+	return a + b
+}
+
 func main() {
 	/*
 		name, err := FindUser(42)
@@ -52,5 +56,8 @@ func main() {
 	//	if errors.As(err, &valErr) {
 	//		fmt.Printf("Field: %s | Issue: %s\n", valErr.Field, valErr.Reason)
 	//	}
+
+	valueA := Add(1, 2)
+	fmt.Printf("Value: %d\n", valueA)
 
 }
