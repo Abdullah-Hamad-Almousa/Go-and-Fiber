@@ -78,4 +78,27 @@ func main() {
 
 	// Delete
 
+	scores := map[string]int{"Ali": 45, "Sara": 32, "Ahmed": 22}
+	for k, v := range scores {
+		if v < 50 {
+			delete(scores, k)
+		}
+	}
+	fmt.Println(scores)
+	for i := range 37 {
+		i++
+		fmt.Print("-")
+		if i == 37 {
+			fmt.Println()
+		}
+	}
+
+	data := map[string]bool{"x": true, "y": true, "z": true}
+	toRemove := []string{"x", "z"}
+
+	for _, key := range toRemove {
+		delete(data, key)
+	}
+	fmt.Println(data)
+
 }
