@@ -16,13 +16,41 @@ func FindUser(id int) (string, error) {
 	return "Abdullah", nil
 }
 
-func main() {
+type ValidationError struct {
+	Field  string
+	Reason string
+}
 
-	name, err := FindUser(42)
-	if err != nil {
-		fmt.Println("Caught sentinel error:", err)
-		return
+func (e *ValidationError) Error() string {
+
+	return fmt.Sprintf("Invalid field %s: %s", e.Field, e.Reason)
+
+}
+
+func ValidateAge(age int) error {
+	if age < 0 {
+		return &ValidationError{Field: "Age", Reason: "Can not be negative"}
 	}
-	fmt.Println("Name:", name)
+	return nil
+}
+
+func main() {
+	/*
+		name, err := FindUser(42)
+		if err != nil {
+			fmt.Println("Caught sentinel error:", err)
+			return
+		}
+		fmt.Println("Name:", name) */
+
+	err := ValidateAge(5)
+	if valErr, ok := errors.AsType[*ValidationError](err); ok {
+		fmt.Printf("Field: %s | Issue: %s\n", valErr.Field, valErr.Reason)
+	}
+
+	//	var valErr *ValidationError
+	//	if errors.As(err, &valErr) {
+	//		fmt.Printf("Field: %s | Issue: %s\n", valErr.Field, valErr.Reason)
+	//	}
 
 }
