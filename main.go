@@ -60,4 +60,6 @@ func main() {
 	valueA := Add(1, 2)
 	fmt.Printf("Value: %d\n", valueA)
 
+	// TODO: Make a test file and use go test -v
+
 }

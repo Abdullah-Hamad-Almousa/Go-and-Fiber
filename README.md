@@ -1,8 +1,8 @@
-# day4
+# day5
 
 This repo is not useful. It is a scratch pad of Go snippets with no app, no library, and no problem to solve. `master` is whatever `main.go` happens to do right now. The other branches are placeholders: names and notes only. They are not created yet.
 
-## day4
+## day5
 
 require more work on the test
 
