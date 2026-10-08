@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 // Goal: Enforce directional type safety using arrow operators for
-//sending (chan<-) and receiving (<-chan).
+// sending (chan<-) and receiving (<-chan).
 
 func produce(out chan<- string) {
 	out <- "package_ready"

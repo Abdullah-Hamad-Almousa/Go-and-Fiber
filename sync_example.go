@@ -10,7 +10,7 @@ import (
 
 func worker(id int, wg *sync.WaitGroup) {
 	defer wg.Done()
-	fmt.Println("[sync] Worker %d finished work\n ", id)
+	fmt.Printf("[sync] Worker %d finished work\n ", id)
 }
 
 func RunSyncExample() {
