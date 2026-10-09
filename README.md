@@ -12,6 +12,12 @@ go test ./...
 go run main.go -text "Hello Go`n Day 7 complete`n this is a test"
 ```
 
+This code to counts words
+words := len(strings.Fields(text))
+
+and this code to count lines
+lines := len(strings.Split(strings.TrimSpace(text), "\n"))
+
 <br>
 
 | branch | what I did |
