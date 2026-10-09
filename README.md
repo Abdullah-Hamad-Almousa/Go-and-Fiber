@@ -4,6 +4,14 @@ This repo is not useful. It is a scratch pad of Go snippets with no app, no libr
 
 ## day7
 
+```sh
+go test ./...
+```
+
+```sh
+go run main.go -text "Hello Go`n Day 7 complete`n this is a test"
+```
+
 <br>
 
 | branch | what I did |
