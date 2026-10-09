@@ -45,6 +45,14 @@ wg.Wait() blocks until all three workers have called Done().
 
 ## select_example.go
 
+Creates FastCh, an unbuffered string channel.
+Starts a goroutine that sleeps for 50ms, then tries to send "Fast server response" on fastCh.
+Since the channel is unbuffered, that send waits until something receives the value.
+Enters select, waiting for either
+    - a value from fastCh or
+    - the 200ms timeout from time.After
+The goroutine's send is ready first, select receives the response and runs the first case.
+
 <br>
 
 | branch | what I did |

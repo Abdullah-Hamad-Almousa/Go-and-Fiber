@@ -18,7 +18,7 @@ func RunSelectExample() {
 
 	select {
 	case res := <-fastCh:
-		fmt.Println("[select] Handled: %s\n", res)
+		fmt.Printf("[select] Handled: %s\n", res)
 	case <-time.After(200 * time.Millisecond):
 		fmt.Println("[select] Request timeout out")
 	}
